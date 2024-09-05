@@ -119,6 +119,24 @@
             letter-spacing: 1px;
         }
 
+        /* تحسين عرض الفيديوهات */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px auto;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 26px;
@@ -133,7 +151,7 @@
                 font-size: 18px;
             }
             .whatsapp-contact {
-                bottom: 15px;
+                bottom: 300px;
                 right: 15px;
                 padding: 8px 15px;
                 font-size: 18px;
@@ -173,41 +191,35 @@
             <li><strong>التشطيبات النهائية:</strong> معالجة أي تفاصيل دقيقة وإضافة الطلاء الزخرفي أو التأثيرات الخاصة لإعطاء لمسة فنية.</li>
         </ul>
         <p>انضموا إلينا اليوم لتكونوا جزءًا من عالم الصباغة الإبداعي واستفيدوا من خبرتنا لتطوير مهاراتكم أو تحسين مساحاتكم. نحن هنا لتقديم الدعم الكامل لكم ولتلبية كل احتياجاتكم بفضل التزامنا بالجودة والابتكار.</p>
-        <p class="owner-name">مع تحيات، يونس الصباغ</p>
+        <p class="owner-name">يونس صباغ - محترف الصباغة</p>
     </div>
-
-    <!-- قسم المتدربين -->
+    
     <div class="intro">
-        <h2>خدمات مخصصة للمتدربين</h2>
-        <p>هل ترغب في تطوير مهاراتك في مجال الصباغة؟ نقدم لك مجموعة من الخدمات الخاصة للمتدربين لمساعدتك على البدء أو تطوير معرفتك الاحترافية:</p>
-        <ul>
-            <li><strong>دورات تدريبية متقدمة:</strong> تعلم أفضل التقنيات الحديثة في الصباغة باستخدام الأدوات المتطورة.</li>
-            <li><strong>ورشات عمل تطبيقية:</strong> فرص عملية لتطبيق ما تعلمته في بيئة حقيقية وتحت إشراف خبراء في المجال.</li>
-            <li><strong>تقييم ومتابعة:</strong> الحصول على تقييمات مهنية لمستوى تقدمك مع إرشادات لتحسين أدائك.</li>
-            <li><strong>شهادات معتمدة:</strong> بعد إكمال الدورة، ستحصل على شهادة معتمدة تثبت مهاراتك.</li>
-        </ul>
-        <p>لا تفوت هذه الفرصة للانضمام إلى نخبة من محترفي الصباغة واكتساب خبرات تؤهلك لدخول سوق العمل بثقة.</p>
-    </div>
+        <h2>فيديو تعليمي حول تقنيات الصباغة</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/msPtrocSHdw?autoplay=0&loop=1&playlist=msPtrocSHdw" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
 
-    <!-- أيقونة واتساب للمتدربين -->
-    <div class="whatsapp-contact">
-        <a href="https://wa.me/212690919779?text=مرحبًا، أود الاستفسار عن خدمات التدريب." target="_blank">
-            تواصل مع المتدربين عبر واتساب
-            <img src="R.ico" alt="واتساب"> <!-- استبدل الرابط بصورة أيقونة واتساب الخاصة بك -->
-        </a>
-    </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Pb1kjTrtrwY" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
 
-    <!-- أيقونة واتساب للخدمات العامة -->
-    <div class="whatsapp-contact" style="bottom: 80px;">
-        <a href="https://wa.me/212690919779?text=مرحبًا، أود الاستفسار عن خدمات الصباغة." target="_blank">
-            تواصل عبر واتساب
-            <img src="R.ico" alt="واتساب"> <!-- استبدل الرابط بصورة أيقونة واتساب الخاصة بك -->
-        </a>
+        <p>شاهد هذا الفيديو لمعرفة المزيد حول تقنيات الصباغة الحديثة وكيفية تحسين جمالية مساحاتك باستخدام ألوان عصرية.</p>
     </div>
 </div>
 
+<a class="whatsapp-contact" href="https://wa.me/212690919779" target="_blank">
+    <img src="R.ico" alt="WhatsApp"> <!-- استبدل الرابط برابط أيقونة WhatsApp -->
+</a>
+
 <footer>
-    <p>&copy; 2024 جميع الحقوق محفوظة - مقاولة الصباغة</p>
+    <p>&copy; 2024 مقاولة الصباغة. جميع الحقوق محفوظة. | الهاتف: +212690919779 | البريد الإلكتروني: younessezaini132@gmail.com</p>
 </footer>
 
 </body>
